@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
     LineageRedAccent \
     LineageYellowAccent
 
+# Fonts
+PRODUCT_PACKAGES += \
+    CustomFonts
+
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
     7z \
