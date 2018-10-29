@@ -149,7 +149,10 @@ PRODUCT_PACKAGES += \
     LockClock \
     TrebuchetQuickStep \
     Updater \
-    WeatherProvider
+    WeatherProvider \
+    WallpaperPicker \
+    WeatherProvider \
+    WeatherClient
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -260,3 +263,6 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
+
+# Weather
+include vendor/lineage/config/weather.mk
