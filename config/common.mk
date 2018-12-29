@@ -240,6 +240,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
 
+# Weather client
+PRODUCT_COPY_FILES += \
+    vendor/lineage/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
+    vendor/lineage/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     micro_bench \
@@ -378,6 +383,3 @@ endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
-
-# Weather
-include vendor/lineage/config/weather.mk
