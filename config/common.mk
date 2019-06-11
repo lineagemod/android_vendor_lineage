@@ -259,7 +259,7 @@ endif
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-LINEAGE_VERSION := DarkPhoenix-16.0-$(shell date -u +%Y%m%d)
+LINEAGE_VERSION := losMOD-16.0-$(shell date -u +%Y%m%d)
 LINEAGE_DISPLAY_VERSION := $(LINEAGE_VERSION)
 TARGET_VENDOR_RELEASE_BUILD_ID := $(LINEAGE_VERSION)
 
